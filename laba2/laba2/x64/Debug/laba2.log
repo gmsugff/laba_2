@@ -1,0 +1,52 @@
+﻿  main.cpp
+C:\Users\User\Desktop\laba2\laba2\main.cpp(23,22): error C2248: sortapp::bubble: невозможно обратиться к private член, объявленному в классе "sortapp"
+  C:\Users\User\Desktop\laba2\laba2\sortapp.h(6,6):
+   см. объявление "sortapp::bubble"
+  C:\Users\User\Desktop\laba2\laba2\sortapp.h(5,7):
+   см. объявление "sortapp"
+  
+C:\Users\User\Desktop\laba2\laba2\main.cpp(23,22): error C2352: "sortapp::bubble": для вызова нестатической функции-члена требуется объект
+  C:\Users\User\Desktop\laba2\laba2\sortapp.h(6,6):
+   см. объявление "sortapp::bubble"
+  
+C:\Users\User\Desktop\laba2\laba2\main.cpp(26,22): error C2248: sortapp::choice: невозможно обратиться к private член, объявленному в классе "sortapp"
+  C:\Users\User\Desktop\laba2\laba2\sortapp.h(8,6):
+   см. объявление "sortapp::choice"
+  C:\Users\User\Desktop\laba2\laba2\sortapp.h(5,7):
+   см. объявление "sortapp"
+  
+C:\Users\User\Desktop\laba2\laba2\main.cpp(26,22): error C2352: "sortapp::choice": для вызова нестатической функции-члена требуется объект
+  C:\Users\User\Desktop\laba2\laba2\sortapp.h(8,6):
+   см. объявление "sortapp::choice"
+  
+C:\Users\User\Desktop\laba2\laba2\main.cpp(29,22): error C2248: sortapp::insert: невозможно обратиться к private член, объявленному в классе "sortapp"
+  C:\Users\User\Desktop\laba2\laba2\sortapp.h(10,6):
+   см. объявление "sortapp::insert"
+  C:\Users\User\Desktop\laba2\laba2\sortapp.h(5,7):
+   см. объявление "sortapp"
+  
+C:\Users\User\Desktop\laba2\laba2\main.cpp(29,22): error C2352: "sortapp::insert": для вызова нестатической функции-члена требуется объект
+  C:\Users\User\Desktop\laba2\laba2\sortapp.h(10,6):
+   см. объявление "sortapp::insert"
+  
+C:\Users\User\Desktop\laba2\laba2\main.cpp(32,22): error C2248: sortapp::counting: невозможно обратиться к private член, объявленному в классе "sortapp"
+  C:\Users\User\Desktop\laba2\laba2\sortapp.h(12,6):
+   см. объявление "sortapp::counting"
+  C:\Users\User\Desktop\laba2\laba2\sortapp.h(5,7):
+   см. объявление "sortapp"
+  
+C:\Users\User\Desktop\laba2\laba2\main.cpp(32,22): error C2352: "sortapp::counting": для вызова нестатической функции-члена требуется объект
+  C:\Users\User\Desktop\laba2\laba2\sortapp.h(12,6):
+   см. объявление "sortapp::counting"
+  
+C:\Users\User\Desktop\laba2\laba2\main.cpp(35,22): error C2039: "digital": не является членом "sortapp".
+  C:\Users\User\Desktop\laba2\laba2\sortapp.h(5,7):
+   см. объявление "sortapp"
+  
+C:\Users\User\Desktop\laba2\laba2\main.cpp(35,22): error C3861: digital: идентификатор не найден
+  sortapp.cpp
+C:\Users\User\Desktop\laba2\laba2\sortapp.cpp(18,15): error C2511: void sortapp::choice(int *&,int &): перегруженная функция-член не найдена в "sortapp"
+  C:\Users\User\Desktop\laba2\laba2\sortapp.h(5,7):
+   см. объявление "sortapp"
+  
+  Создание кода...
