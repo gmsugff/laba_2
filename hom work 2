@@ -1,24 +1,17 @@
 void Tools::showFiveDaysForecast(nlohmann::json data) {
-    int i = 0;
-    int j = i + 1;
+  
+  int counter = 0;
+  double sum = 0;
 
-    while (i < data["list"].size()) {
-        std::string dateDay = data["list"][i]["dt_txt"].get<std::string>().substr(8, 2);
-        int counter = 1;
-        double sum = data["list"][i]["main"]["temp"].get<double>() - 273.15;
+  for (int i = 0; i < data["list"].size(); i++) {
+    sum += data["list"][i]["main"]["temp"].get<double>() - 273.15;
+    counter++;
 
-        for (j = i + 1; j < data["list"].size(); j++) {
-            std::string dateDayJ = data["list"][j]["dt_txt"].get<std::string>().substr(8, 2);
-            if (dateDay != dateDayJ) {
-                break;
-            }
-            counter++;
-            sum += data["list"][j]["main"]["temp"].get<double>() - 273.15;
-        }
-
-        std::cout << data["list"][i]["dt_txt"].get<std::string>().substr(0, 10);
-        std::cout << " Average Temp: " << (int)(sum / counter) << std::endl;
-
-        i = j;
+    if ((i + 1) < data["list"].size() && data["list"][i]["dt_txt"].get<std::string>().substr(8, 2) != data["list"][i + 1]["dt_txt"].get<std::string>().substr(8, 2)) {
+      std::cout << data["list"][i]["dt_txt"].get<std::string>().substr(0, 10);
+      std::cout << " Average Temp: " << (int)(sum / counter) << std::endl;
+      sum = 0;
+      counter = 0;
     }
+  }
 }
